@@ -1,15 +1,187 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TryHackMe</title>
-  <style>
-    body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;max-width:720px;margin:5rem auto;padding:0 1rem;line-height:1.6}
-  </style>
-</head>
-<body>
-  <h1>It works 🚀</h1>
-  <p>Hallo von def-hash/tryhackme</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overwatch 2 Fan Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <header class="hero" id="home">
+      <nav class="navbar">
+        <a class="navbar__brand" href="#home">Overwatch 2</a>
+        <button class="navbar__toggle" aria-label="Menü öffnen">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="navbar__menu">
+          <li><a href="#heroes">Helden</a></li>
+          <li><a href="#modes">Spielmodi</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </nav>
+      <div class="hero__content">
+        <h1>Willkommen beim Overwatch 2 Fan Hub</h1>
+        <p>
+          Bleib auf dem Laufenden über neue Helden, saisonale Events und Tipps
+          für den Wettkampfmodus.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#heroes">Entdecke Helden</a>
+          <a class="btn btn--ghost" href="#events">Saison-Highlights</a>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="heroes">
+        <div class="section__heading">
+          <h2>Helden-Roster</h2>
+          <p>
+            Eine Auswahl beliebter Helden aus Tank-, Damage- und Support-Rollen,
+            perfekt für jede Teamzusammenstellung.
+          </p>
+        </div>
+        <div class="card-grid" role="list">
+          <article class="card" role="listitem">
+            <img src="https://images.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/blt409775888b859504/62df7ef872896a544e8c8287/orisa.png" alt="Orisa" />
+            <h3>Orisa</h3>
+            <p>Standhafte Tank-Heldin mit rotierendem Speer und Energiefähigkeiten.</p>
+            <button class="btn btn--outline" data-hero="Orisa">Mehr erfahren</button>
+          </article>
+          <article class="card" role="listitem">
+            <img src="https://images.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/bltfd3b0f0fa48ac90f/62df7ee9ee594754feb9bc04/sojourn.png" alt="Sojourn" />
+            <h3>Sojourn</h3>
+            <p>Damage-Heldin mit Railgun, die hohe Mobilität und Präzision kombiniert.</p>
+            <button class="btn btn--outline" data-hero="Sojourn">Mehr erfahren</button>
+          </article>
+          <article class="card" role="listitem">
+            <img src="https://images.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/blt24c40931b35654ea/62df7f05c432a954b939078d/kiriko.png" alt="Kiriko" />
+            <h3>Kiriko</h3>
+            <p>Support-Heldin mit teleportierenden Heilungen und Schutz-Talenten.</p>
+            <button class="btn btn--outline" data-hero="Kiriko">Mehr erfahren</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="modes">
+        <div class="section__heading">
+          <h2>Spielmodi</h2>
+          <p>Erlebe abwechslungsreiche Modi, vom klassischen Payload bis hin zu neuen Push-Missionen.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__icon">⚔️</div>
+            <div>
+              <h3>Payload</h3>
+              <p>Eskortiere die Fracht zum Ziel, während das gegnerische Team versucht, dich aufzuhalten.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__icon">🚩</div>
+            <div>
+              <h3>Push</h3>
+              <p>Kämpfe um die Kontrolle über einen Roboter, der die Barriere in Richtung der gegnerischen Basis schiebt.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__icon">🏟️</div>
+            <div>
+              <h3>Control</h3>
+              <p>Halte den zentralen Punkt, um Runden zu gewinnen und den Sieg zu sichern.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="events">
+        <div class="section__heading">
+          <h2>Saisonale Events</h2>
+          <p>
+            Jedes Event bringt neue Herausforderungen, Skins und Arcade-Modi. Bleib
+            dran und verpasse keine Belohnung.
+          </p>
+        </div>
+        <div class="events">
+          <article class="event-card">
+            <h3>Sommer-Games</h3>
+            <p>Lúcioball ist zurück! Gewinne Matches, um exklusive Skins zu erspielen.</p>
+            <a class="btn btn--primary" href="#community">Jetzt vormerken</a>
+          </article>
+          <article class="event-card">
+            <h3>Halloween Terror</h3>
+            <p>Stell dich Junkensteins Monstern in kooperativen PvE-Missionen.</p>
+            <a class="btn btn--primary" href="#community">Zum Event</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="community">
+        <div class="section__heading">
+          <h2>Community &amp; Ressourcen</h2>
+          <p>
+            Vernetze dich mit anderen Spielerinnen und Spielern und verbessere
+            dein Gameplay mit hilfreichen Ressourcen.
+          </p>
+        </div>
+        <div class="community">
+          <div class="community__card">
+            <h3>Discord</h3>
+            <p>Tritt unserem Community-Server bei und finde ein Team für deine nächste Ranglistenpartie.</p>
+            <button class="btn btn--ghost" type="button">Server beitreten</button>
+          </div>
+          <div class="community__card">
+            <h3>Coaching Guides</h3>
+            <p>Strategien, Map-Guides und Aim-Training, zusammengestellt von Top-Spieler:innen.</p>
+            <button class="btn btn--ghost" type="button">Guides lesen</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Fanprojekt zu Overwatch 2 – nicht offiziell mit Blizzard Entertainment
+        verbunden.
+      </p>
+      <div class="footer__social">
+        <a href="https://twitter.com/PlayOverwatch" aria-label="Overwatch auf Twitter">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path
+              d="M22.46 6c-.77.35-1.6.58-2.46.69a4.26 4.26 0 0 0 1.88-2.35 8.48 8.48 0 0 1-2.7 1.03 4.24 4.24 0 0 0-7.3 3.87A12.03 12.03 0 0 1 3.16 4.9a4.22 4.22 0 0 0 1.31 5.65 4.2 4.2 0 0 1-1.92-.53v.05a4.24 4.24 0 0 0 3.4 4.16 4.26 4.26 0 0 1-1.91.07 4.25 4.25 0 0 0 3.96 2.94A8.5 8.5 0 0 1 2 19.54 12 12 0 0 0 8.29 21.5c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.36 8.36 0 0 0 22.46 6z"
+            />
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/overwatch" aria-label="Overwatch auf YouTube">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path
+              d="M23.5 6.2s-.23-1.64-.95-2.36c-.91-.95-1.93-.95-2.4-1C16.6 2.5 12 2.5 12 2.5h-.01s-4.6 0-8.15.34c-.47.06-1.49.06-2.4 1C.73 4.56.5 6.2.5 6.2S.25 8.2.25 10.2v1.6c0 2 .25 4 .25 4s.23 1.64.95 2.36c.91.95 2.1.92 2.63 1.03 1.9.18 8 .34 8 .34s4.61-.01 8.16-.35c.47-.05 1.49-.05 2.4-1 .72-.72.95-2.36.95-2.36s.25-2 .25-4v-1.6c0-2-.25-4-.25-4zM9.75 14.62V7.38L15.5 11l-5.75 3.62z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <div class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Dialog schließen">&times;</button>
+        <h3 class="modal__title"></h3>
+        <p class="modal__body"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
