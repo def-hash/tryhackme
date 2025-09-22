@@ -99,3 +99,5 @@ document.querySelectorAll('.section, .card, .timeline__item, .event-card, .commu
   element.classList.add('is-reveal');
   observer.observe(element);
 });
+// TEST
+console.log("JS OK", Date.now());
